@@ -382,9 +382,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E0e-gZ-vnp">
-                                <rect key="frame" x="0.0" y="126" width="414" height="644"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E0e-gZ-vnp">
+                                <rect key="frame" x="0.0" y="126" width="414" height="687"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="88" id="Jdl-4k-H9U" customClass="SearchCell" customModule="BooksTest" customModuleProvider="target">
@@ -456,6 +455,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ofA-qm-Dp0"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="E0e-gZ-vnp" firstAttribute="trailing" secondItem="ofA-qm-Dp0" secondAttribute="trailing" id="GIr-6A-aBh"/>
+                            <constraint firstItem="E0e-gZ-vnp" firstAttribute="leading" secondItem="ofA-qm-Dp0" secondAttribute="leading" id="daV-fY-rK5"/>
+                            <constraint firstItem="E0e-gZ-vnp" firstAttribute="top" secondItem="ofA-qm-Dp0" secondAttribute="top" constant="38" id="jpn-8k-Mpe"/>
+                            <constraint firstItem="ofA-qm-Dp0" firstAttribute="bottom" secondItem="E0e-gZ-vnp" secondAttribute="bottom" id="rxg-VW-YN7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="TON-u5-nwE"/>
                     <connections>
